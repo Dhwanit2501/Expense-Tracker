@@ -1,0 +1,150 @@
+.me-auto{
+    font-family: 'Fredoka', sans-serif;
+}
+
+body{
+    background-image: url('/public/Images/cool-background.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.btn{
+    font-family: 'Roboto', sans-serif;
+    
+ /*    
+}
+
+.btn:hover{
+    transition: 0.5s ;
+    transform: scale(1.1);
+     */
+    
+}
+
+Card{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#title{
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    
+    padding: 0px 15px;
+}
+footer{
+    position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+}
+
+#fade{
+    color:#0b090a;
+    animation:hide 4s; 
+    position:relative;
+    font-family:'Yanone Kaffeesatz', sans-serif;
+    font-size:80px;
+    text-align:center;
+    transform: translateY(20%);
+}
+
+
+
+@keyframes hide {
+    0%{
+        
+        opacity:0%;
+        transform: scale(-0.1) translateY(20%);
+        
+        }
+    50%{
+        opacity: 75%;
+    }
+    100% {
+        opacity:110%;
+        transform:scale(1) translateY(20%);
+    
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .me-auto{
+        font-size: 38px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .hstack {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: stretch;
+        
+    }
+    #title {
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        
+    }
+    html{
+        background-image: url('/public/Images/cool-background.png') no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
+        
+    }
+    #btn-cust{
+        font-size: 22px;
+        width: 60%;
+    }
+    #modal{
+        font-size: 20px;
+        transform: translateY(60%);
+    }
+    #mbtn{
+        font-size: 20px;
+
+    }
+    #fade{
+        font-size: 60px;
+        animation:hide 3s;
+        transform: translateY(10%);
+    }
+    #card-stack{
+        flex-direction: row;
+    }
+    .mb-4 {
+        margin-bottom: 4rem!important;
+    }
+    #vdel{
+        font-size: 15px;
+        padding: 2.5px;
+       
+    }
+
+    Card{
+        color: #395B64;
+    }
+    @keyframes hide {
+        0%{
+            
+            opacity:0%;
+            transform: scale(-0.1) translateY(10%);
+            
+            }
+        50%{
+            opacity: 75%;
+        }
+        100% {
+            opacity:110%;
+            transform:scale(1) translateY(10%);
+        
+        }
+    }
+}
